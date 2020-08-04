@@ -34,7 +34,14 @@ window.addEventListener('load', () => {
 })
 
 //   * `focus`
+const changeHome = document.getElementsByTagName('a')
 
+changeHome[0].addEventListener('focus', () => {
+    changeHome[0].style.color='orange'
+    changeHome[0].addEventListener('blur', () => {
+        changeHome[0].style.color='blue'
+    })
+})
 
 //   * `resize`
 
@@ -46,6 +53,10 @@ window.addEventListener('load', () => {
 
 
 //   * `dblclick`
+const dbClickP = document.getElementsByTagName('p')
 
+dbClickP[0].addEventListener('dblclick', () => {
+    dbClickP[0].textContent='What did you do!?'
+})
 
 //   * `drag / drop`
