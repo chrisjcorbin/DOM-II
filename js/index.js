@@ -44,13 +44,23 @@ changeHome[0].addEventListener('focus', () => {
 })
 
 //   * `resize`
+const resizeWindow = window
+resizeWindow.addEventListener('resize', () => {
+    console.log('Ouch, dont do that!')
+    console.log('Hey, watch it!')
+    console.log('\n');
+})
 
 
 //   * `scroll`
 
 
 //   * `select`
+const stopNav = document.querySelector('nav')
 
+stopNav.addEventListener('select', links => {
+    links.preventDefault()
+})
 
 //   * `dblclick`
 const dbClickP = document.getElementsByTagName('p')
@@ -60,3 +70,18 @@ dbClickP[0].addEventListener('dblclick', () => {
 })
 
 //   * `drag / drop`
+
+// Copy Event
+const contentDestText = document.querySelector('.content-destination')
+const noImage = document.querySelector('.content-destination img')
+
+contentDestText.addEventListener('copy', () => {
+    noImage.style.display = 'none'
+})
+
+// Click
+const sClickP = document.getElementsByTagName('p');
+
+sClickP[1].addEventListener('click', () => {
+  sClickP[1].textContent = "You did it again?!"
+})
