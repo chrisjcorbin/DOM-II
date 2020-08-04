@@ -9,8 +9,8 @@ introImg.addEventListener('mouseover', () => {
     introImg.style.width = '1000px'
     introImg.addEventListener('mouseout', () => {
         introImg.src = 'https://i.ytimg.com/vi/ZkBxl0vAqBo/maxresdefault.jpg';
-        introImg.style.height = "auto";
-        introImg.style.width = "1000px";
+        introImg.style.height = "auto"
+        introImg.style.width = "1000px"
     })
 })
 
@@ -18,7 +18,7 @@ introImg.addEventListener('mouseover', () => {
 const newBg = document.querySelector('body')
 
 newBg.addEventListener('keydown' , () => {
-    newBg.style.backgroundColor='rebeccapurple';
+    newBg.style.backgroundColor='rebeccapurple'
 })
 
 //   * `wheel`
@@ -29,7 +29,9 @@ headingSize.addEventListener('wheel', () => {
 })
 
 //   * `load`
-
+window.addEventListener('load', () => {
+    window.alert('Welcome to the Fun Bus!')
+})
 
 //   * `focus`
 
