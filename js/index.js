@@ -22,7 +22,11 @@ newBg.addEventListener('keydown' , () => {
 })
 
 //   * `wheel`
+const headingSize = document.querySelector('.logo-heading')
 
+headingSize.addEventListener('wheel', () => {
+    headingSize.style.fontSize='10rem'
+})
 
 //   * `load`
 
