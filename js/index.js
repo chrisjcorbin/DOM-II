@@ -74,8 +74,15 @@ contentDestText.addEventListener('copy', () => {
 })
 
 // Click
-const sClickP = document.getElementsByTagName('p');
+const sClickP = document.getElementsByTagName('p')
 
 sClickP[1].addEventListener('click', () => {
   sClickP[1].textContent = "OOOOPS! Yooooouuu did it again?!"
+})
+
+// Prevent Default
+const freezeNav = document.querySelector('.nav-link')
+
+freezeNav.addEventListener('click', (event) => {
+    event.preventDefault()
 })
