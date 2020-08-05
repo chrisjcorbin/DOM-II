@@ -47,7 +47,6 @@ changeHome[0].addEventListener('focus', () => {
 const resizeWindow = window
 resizeWindow.addEventListener('resize', () => {
     console.log('Ouch, dont do that!')
-    console.log('Hey, watch it!')
 })
 
 
@@ -55,11 +54,7 @@ resizeWindow.addEventListener('resize', () => {
 
 
 //   * `select`
-const stopNav = document.querySelector('nav')
 
-stopNav.addEventListener('select', links => {
-    links.preventDefault()
-})
 
 //   * `dblclick`
 const dbClickP = document.getElementsByTagName('p')
@@ -82,5 +77,5 @@ contentDestText.addEventListener('copy', () => {
 const sClickP = document.getElementsByTagName('p');
 
 sClickP[1].addEventListener('click', () => {
-  sClickP[1].textContent = "You did it again?!"
+  sClickP[1].textContent = "OOOOPS! Yooooouuu did it again?!"
 })
