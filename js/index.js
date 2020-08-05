@@ -3,14 +3,14 @@
 const introImg = document.querySelector('.intro img')
 
 introImg.addEventListener('mouseover', () => {
-    introImg.src = "https://i.ytimg.com/vi/ZkBxl0vAqBo/maxresdefault.jpg"
+    introImg.src = 'https://i.ytimg.com/vi/ZkBxl0vAqBo/maxresdefault.jpg'
     introImg.style.height = 'auto'
     introImg.style.width = '1000px'
     introImg.addEventListener('mouseout', () => {
         introImg.src =
-          "https://vignette.wikia.nocookie.net/worldofcarsdrivein/images/a/a7/8_%282%29.jpg/revision/latest?cb=20180329101429"
-        introImg.style.height = "auto"
-        introImg.style.width = "1000px"
+          'https://vignette.wikia.nocookie.net/worldofcarsdrivein/images/a/a7/8_%282%29.jpg/revision/latest?cb=20180329101429'
+        introImg.style.height = 'auto'
+        introImg.style.width = '1000px'
     })
 })
 
@@ -91,7 +91,7 @@ contentDestText.addEventListener('copy', () => {
 const sClickP = document.getElementsByTagName('p')[1]
 
 sClickP.addEventListener('click', () => {
-  sClickP.textContent = "OOOOPS! Yooooouuu did it again?!"
+  sClickP.textContent = 'OOOOPS! Yooooouuu did it again?!'
 })
 
 // Prevent Default
