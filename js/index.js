@@ -51,24 +51,33 @@ resizeWindow.addEventListener('resize', () => {
 
 
 //   * `scroll`
-const imgScroll = document.getElementsByClassName('img-content')
-const targetImg = imgScroll[0]
+const imgScroll = document.getElementsByClassName('img-content')[0]
 
 window.addEventListener('scroll', () => {
-  targetImg.style.display='none'
+  imgScroll.style.display='none'
 })
 
 //   * `select`
 
 
 //   * `dblclick`
-const dbClickP = document.getElementsByTagName('p')
+const dbClickP = document.getElementsByTagName('p')[0]
 
-dbClickP[0].addEventListener('dblclick', () => {
-    dbClickP[0].textContent='What did you do!?'
+dbClickP.addEventListener('dblclick', () => {
+    dbClickP.textContent='What did you do!?'
 })
 
 //   * `drag / drop`
+const pTwo = document.querySelectorAll('p')[2];
+
+pTwo.addEventListener('drag', (event) => {
+  event.stopPropagation()
+  pTwo.style.fontSize = '5rem'
+})
+
+pTwo.addEventListener('dragend', () => {
+  pTwo.style.color = 'green'
+})
 
 // Copy Event
 const contentDestText = document.querySelector('.content-destination')
@@ -79,10 +88,10 @@ contentDestText.addEventListener('copy', () => {
 })
 
 // Click
-const sClickP = document.getElementsByTagName('p')
+const sClickP = document.getElementsByTagName('p')[1]
 
-sClickP[1].addEventListener('click', () => {
-  sClickP[1].textContent = "OOOOPS! Yooooouuu did it again?!"
+sClickP.addEventListener('click', () => {
+  sClickP.textContent = "OOOOPS! Yooooouuu did it again?!"
 })
 
 // Prevent Default
