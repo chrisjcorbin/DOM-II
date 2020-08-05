@@ -51,7 +51,12 @@ resizeWindow.addEventListener('resize', () => {
 
 
 //   * `scroll`
+const imgScroll = document.getElementsByClassName('img-content')
+const targetImg = imgScroll[0]
 
+window.addEventListener('scroll', () => {
+  targetImg.style.display='none'
+})
 
 //   * `select`
 
